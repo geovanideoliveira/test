@@ -1,0 +1,139 @@
+.Home {
+    width: 1440px;
+    height: 820px;
+    position: relative;
+    background: #E3EBF3;
+  }
+  
+  .Footer {
+    width: 1440px;
+    height: 66px;
+    left: 0px;
+    top: 754px;
+    position: absolute;
+  }
+  
+  .Rectangle1 {
+    width: 1440px;
+    height: 66px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
+  }
+.Searchengine {
+    width: 1307px;
+    height: 66px;
+    left: 66px;
+    top: 394px;
+    position: absolute;
+  }
+  
+  .Rectangle {
+    width: 1307px;
+    height: 66px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.09);
+    border-radius: 11px;
+  }
+  
+  .Location {
+    width: 70.86px;
+    height: 47px;
+    left: 16px;
+    top: 9px;
+    position: absolute;
+  }
+  
+  .SOPaulo {
+    width: 61.71px;
+    left: -0px;
+    top: 21px;
+    position: absolute;
+    text-align: right;
+    color: #00264D;
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 26px;
+    word-wrap: break-word;
+  }
+  
+  
+  .StartDate {
+    width: 88.01px;
+    height: 48px;
+    left: 364px;
+    top: 9px;
+    position: absolute;
+  }
+  
+
+  
+  .Guests {
+    width: 127.46px;
+    height: 48px;
+    left: 980px;
+    top: 9px;
+    position: absolute;
+  }
+  
+  
+  .Search {
+    width: 117px;
+    height: 38px;
+    left: 1169.77px;
+    top: 14px;
+    position: absolute;
+  }
+  
+  
+  .OsMelhoresHoteisEDestinosParaSuaViagem {
+    left: 345px;
+    top: 251px;
+    position: absolute;
+    text-align: center;
+  }
+  
+  /* Continue com os estilos CSS para as outras classes */
+  
+  .Header {
+    width: 1307px;
+    height: 26px;
+    left: 59px;
+    top: 17px;
+    position: absolute;
+  }
+  
+  .Menu {
+    width: 103px;
+    height: 26px;
+    left: 1204px;
+    top: 0px;
+    position: absolute;
+  }
+  
+  .Item {
+    width: 103px;
+    height: 26px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+  }
+  
+  
+  .Logo {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    text-align: right;
+    color: #00264D;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 26px;
+    word-wrap: break-word;
+  }
