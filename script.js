@@ -29,8 +29,9 @@ function search(query) {
         item.hotel.name.toLowerCase().includes(searchTerm)
     );
 
-    // Limitar resultados a 5 itens de sugestão
+    // Limitar resultados a 5 itens de sugestão, sugestões e hotéis
     const limitedSuggestions = matchingSuggestions.slice(0, 5);
+    const limitedHotels = matchingHotels.slice(0, 5);
 
     limitedSuggestions.forEach((item) => {
         const suggestionItem = document.createElement("li");
@@ -38,7 +39,7 @@ function search(query) {
         suggestions.appendChild(suggestionItem);
         suggestionItem.addEventListener("click", () => {
             searchInput.value = item.name;
-            suggestions.innerHTML = "";
+            suggestions.innerHTML = ""; // Limpa todas as sugestões
             displaySuggestionDetails(item);
         });
 
@@ -46,7 +47,7 @@ function search(query) {
         searchResultsContainer.appendChild(suggestionItem);
     });
 
-    matchingHotels.forEach((item) => {
+    limitedHotels.forEach((item) => {
         const hotelItem = document.createElement("li");
         hotelItem.textContent = item.hotel.name;
         hotels.appendChild(hotelItem);
