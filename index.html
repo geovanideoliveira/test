@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -18,6 +19,8 @@
             <div class="SOPaulo">
                 <input type="text" id="searchInput" placeholder="São paulo">
                 <ul id="searchResultsContainer"></ul>
+                <ul id="suggestions"></ul>
+                <ul id="hotels"></ul>
                 
               
             </div>
@@ -27,7 +30,9 @@
             </div>
         </div>
         <div class="StartDate">
-            <div class="doze2022">22/12/2022</div>
+            <div class="doze2022">
+                <input type="date" value="2022-12-22">
+              </div>
             <div class="Label">
                 <div class="Entrada">Entrada</div>
                 <div class="Icon"></div>
@@ -35,7 +40,9 @@
             <div class="Separator"></div>
         </div>
         <div class="EndDate">
-            <div class="umdois2022">28/12/2022</div>
+            <div class="umdois2022">
+                <input type="date" value="28/12/2022">
+              </div>
             <div class="Label">
                 <div class="SaDa">Saída</div>
                 <div class="Icon"></div>
@@ -70,12 +77,6 @@
             </div>
         </div>
         <div class="Logo">infotravel</div>
-    </div>
-    <!-- Adicione as seções de sugestões e hotéis abaixo -->
-    <ul id="suggestions"></ul>
-    <ul id="hotels"></ul>
-</div>
-
 <script type="text/javascript" src="script.js"></script>
 
 </body>
