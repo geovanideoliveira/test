@@ -1,23 +1,88 @@
-// Função para fazer a solicitação à Fake API e mostrar sugestões
-function fetchSuggestions(inputValue) {
-    // Faça uma solicitação HTTP para a API /suggestions com o valor do destino
-    // Aqui, você pode usar a função fetch ou outra biblioteca para fazer a solicitação
-    // Em seguida, atualize a lista de sugestões com os resultados da API
-    // Certifique-se de lidar com erros e tratamento de dados adequados
+const searchInput = document.getElementById("searchInput");
+const searchResultsContainer = document.getElementById("searchResultsContainer");
+const suggestions = document.getElementById("suggestions");
+const hotels = document.getElementById("hotels");
+
+let jsonData;
+
+fetch("db.json")
+    .then((response) => response.json())
+    .then((data) => {
+        jsonData = data;
+    })
+    .catch((error) => {
+        console.error("Erro ao buscar dados: " + error);
+    });
+
+function search(query) {
+    searchResultsContainer.innerHTML = ""; // Limpa o conteúdo anterior
+    suggestions.innerHTML = "";
+    hotels.innerHTML = "";
+
+    const searchTerm = query.toLowerCase();
+
+    const matchingSuggestions = jsonData.suggestions.filter((item) =>
+        item.name.toLowerCase().includes(searchTerm)
+    );
+
+    const matchingHotels = jsonData.hotels.filter((item) =>
+        item.hotel.name.toLowerCase().includes(searchTerm)
+    );
+
+    // Limitar resultados a 5 itens de sugestão
+    const limitedSuggestions = matchingSuggestions.slice(0, 5);
+
+    limitedSuggestions.forEach((item) => {
+        const suggestionItem = document.createElement("li");
+        suggestionItem.textContent = item.name;
+        suggestions.appendChild(suggestionItem);
+        suggestionItem.addEventListener("click", () => {
+            searchInput.value = item.name;
+            suggestions.innerHTML = "";
+            displaySuggestionDetails(item);
+        });
+
+        // Adicione o item à searchResultsContainer
+        searchResultsContainer.appendChild(suggestionItem);
+    });
+
+    matchingHotels.forEach((item) => {
+        const hotelItem = document.createElement("li");
+        hotelItem.textContent = item.hotel.name;
+        hotels.appendChild(hotelItem);
+        hotelItem.addEventListener("click", () => {
+            searchInput.value = item.hotel.name;
+            hotels.innerHTML = "";
+            displayHotelDetails(item);
+        });
+
+        // Adicione o item à searchResultsContainer
+        searchResultsContainer.appendChild(hotelItem);
+    });
 }
 
-const destinationInput = document.getElementById('destinationInput');
-const suggestionsList = document.getElementById('suggestionsList');
+function displaySuggestionDetails(suggestion) {
+    const suggestionDetails = document.createElement("div");
+    suggestionDetails.innerHTML = `
+        <p><strong>Região:</strong> ${suggestion.region}</p>
+        <p><strong>Tipo:</strong> ${suggestion.type}</p>
+    `;
 
-destinationInput.addEventListener('input', () => {
-    const inputValue = destinationInput.value.trim();
+    searchResultsContainer.appendChild(suggestionDetails);
+}
 
-    // Verifique se o valor digitado possui pelo menos 3 caracteres
-    if (inputValue.length >= 3) {
-        // Chame a função para buscar sugestões com base no valor digitado
-        fetchSuggestions(inputValue);
-    } else {
-        // Limpe a lista de sugestões se o valor for muito curto
-        suggestionsList.innerHTML = '';
-    }
+function displayHotelDetails(hotelData) {
+    const hotelDetails = document.createElement("div");
+    hotelDetails.innerHTML = `
+        <p><strong>Endereço:</strong> ${hotelData.hotel.address}</p>
+        <p><strong>Descrição:</strong> ${hotelData.hotel.description}</p>
+        <p><strong>Preço:</strong> ${hotelData.lowestPrice.amount} ${hotelData.lowestPrice.currency}</p>
+    `;
+
+    searchResultsContainer.appendChild(hotelDetails);
+}
+
+searchInput.addEventListener("input", () => {
+    const query = searchInput.value.trim();
+    search(query);
 });
