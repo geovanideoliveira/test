@@ -1,385 +1,463 @@
+body{
+  display: block;
+  margin: 8px;
+  
+}
+head{
+  width: 1440px;
+  height: 820px;
+  position: relative;
+  background: #E3EBF3;
+}
 .Home {
-    width: 1440px;
-    height: 820px;
-    position: relative;
-    background: #E3EBF3;
+  width: 1440px;
+  height: 820px;
+  position: relative;
+  background: #E3EBF3;
 }
 
 .Footer {
-    width: 1440px;
-    height: 66px;
-    left: 0px;
-    top: 754px;
-    position: absolute;
+  width: 1440px;
+  height: 66px;
+  left: 0px;
+  top: 754px;
+  position: absolute;
 }
 
 .Rectangle1 {
-    width: 1440px;
-    height: 66px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    background: white;
+  width: 1440px;
+  height: 66px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: white;
 }
 
 .TodosOsDireitosReservados {
-    left: 609px;
-    top: 20px;
-    position: absolute;
-    color: black;
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 400;
-    line-height: 26px;
-    word-wrap: break-word;
+  left: 609px;
+  top: 20px;
+  position: absolute;
+  color: black;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
 }
 
 .Searchengine {
-    width: 1307px;
-    height: 66px;
-    left: 66px;
-    top: 394px;
-    position: absolute;
+  width: 1307px;
+  height: 66px;
+  left: 66px;
+  top: 394px;
+  position: absolute;
 }
 
 .Rectangle {
-    width: 1307px;
-    height: 66px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    background: white;
-    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.09);
-    border-radius: 11px;}
+  width: 1307px;
+  height: 66px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.09);
+  border-radius: 11px;}
 
 .Location {
-    width: 70.86px;
-    height: 47px;
-    left: 16px;
-    top: 9px;
-    position: absolute;
+  width: 70.86px;
+  height: 47px;
+  left: 16px;
+  top: 9px;
+  position: absolute;
 }
 
 .SOPaulo {
-    width: 61.71px;
-    left: -0px;
-    top: 21px;
-    position: absolute;
-    text-align: right;
-    color: #00264D;
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 26px;
-    word-wrap: break-word;
+  width: 150px;
+  left: -0px;
+  top: 21px;
+  position: absolute;
+  text-align: right;
+  color: #00264D;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word;
 }
 
 .Label {
-    width: 70.86px;
-    height: 24px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
+  width: 70.86px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
 }
 
 .Destino {
-    width: 48.60px;
-    height: 24px;
-    left: 22.26px;
-    top: 0px;
-    position: absolute;
-    color: #698096;
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 400;
-    line-height: 26px;
-    word-wrap: break-word;
+  width: 48.60px;
+  height: 24px;
+  left: 22.26px;
+  top: 0px;
+  position: absolute;
+  color: #698096;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
 }
 
 .Icon {
-    width: 13.15px;
-    height: 14px;
-    left: 0px;
-    top: 5px;
-    position: absolute;
-    border: 1px #0080FF solid;
+  width: 13.15px;
+  height: 14px;
+  left: 0px;
+  top: 5px;
+  position: absolute;
+  border: 1px #0080FF solid;
+  background-image: url('img/icon-1.svg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
 
 .StartDate {
-    width: 88.01px;
-    height: 48px;
-    left: 364px;
-    top: 9px;
-    position: absolute;
+  width: 88.01px;
+  height: 48px;
+  left: 364px;
+  top: 9px;
+  position: absolute;
 }
 
 .doze2022 {
-    width: 66.77px;
-    left: 12.14px;
-    top: 22px;
-    position: absolute;
-    text-align: right;
-    color: #00264D;
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 26px;
-    word-wrap: break-word;
+  width: 66.77px;
+  left: 12.14px;
+  top: 22px;
+  position: absolute;
+  text-align: right;
+  color: #00264D;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+input[type="date"] {
+  width: 80px;
+  left: 12.14px;
+  top: 22px;
+
+  text-align: right;
+  color: #00264D;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word;
+  border: none; /* Remove as bordas */
+  background: transparent; /* Remove o fundo padrão */
+  outline: none; /* Remove a borda de foco */
+ 
 }
 
+
+
+
+
+
+
+
 .Entrada {
-    width: 51.59px;
-    height: 24px;
-    left: 22.26px;
-    top: 0px;
-    position: absolute;
-    color: #698096;
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 400;
-    line-height: 26px;
-    word-wrap: break-word;
+  width: 51.59px;
+  height: 24px;
+  left: 22.26px;
+  top: 0px;
+  position: absolute;
+  color: #698096;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
 }
 
 .Separator {
-    width: 37px;
-    height: 0px;
-    left: 0px;
-    top: 39px;
-    position: absolute;
-    transform: rotate(-90deg);
-    transform-origin: 0 0;
-    border: 1px #E3E6E9 solid;
+  width: 37px;
+  height: 0px;
+  left: 0px;
+  top: 39px;
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  border: 1px #E3E6E9 solid;
 }
 
 .EndDate {
-    width: 78.91px;
-    height: 48px;
-    left: 622.97px;
-    top: 9px;
-    position: absolute;
+  width: 78.91px;
+  height: 48px;
+  left: 622.97px;
+  top: 9px;
+  position: absolute;
 }
 
 .SaDa {
-    width: 36.42px;
-    height: 24px;
-    left: 22.26px;
-    top: 0px;
-    position: absolute;
-    color: #698096;
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 400;
-    line-height: 26px;
-    word-wrap: break-word;
+  width: 36.42px;
+  height: 24px;
+  left: 22.26px;
+  top: 0px;
+  position: absolute;
+  color: #698096;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
 }
 
 .Guests {
-    width: 127.46px;
-    height: 48px;
-    left: 980px;
-    top: 9px;
-    position: absolute;
+  width: 127.46px;
+  height: 48px;
+  left: 980px;
+  top: 9px;
+  position: absolute;
 }
 
 .Adultos1Quarto {
-    width: 114.31px;
-    left: 13.15px;
-    top: 22px;
-    position: absolute;
-    color: #00264D;
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 26px;
-    word-wrap: break-word;
+  width: 114.31px;
+  left: 13.15px;
+  top: 22px;
+  position: absolute;
+  color: #00264D;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word;
 }
 
 .HSpedes {
-    width: 62.72px;
-    height: 24px;
-    left: 23.27px;
-    top: 0px;
-    position: absolute;
-    color: #698096;
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 400;
-    line-height: 26px;
-    word-wrap: break-word;
+  width: 62.72px;
+  height: 24px;
+  left: 23.27px;
+  top: 0px;
+  position: absolute;
+  color: #698096;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
 }
 
 .Search {
-    width: 117px;
-    height: 38px;
-    left: 1169.77px;
-    top: 14px;
-    position: absolute;
+  width: 117px;
+  height: 38px;
+  left: 1169.77px;
+  top: 14px;
+  position: absolute;
 }
 
 .BotO {
-    width: 116.85px;
-    height: 38px;
-    left: 0.15px;
-    top: 0px;
-    position: absolute;
-    background: #0080FF;
-    box-shadow: 0px 2px 9px 1px rgba(0, 128, 255, 0.29);
-    border-radius: 50px;
+  width: 116.85px;
+  height: 38px;
+  left: 0.15px;
+  top: 0px;
+  position: absolute;
+  background: #0080FF;
+  box-shadow: 0px 2px 9px 1px rgba(0, 128, 255, 0.29);
+  border-radius: 50px;
 }
 
 .Pesquisar {
-    width: 117px;
-    height: 38px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    text-align: center;
-    color: white;
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 400;
-    line-height: 26px;
-    word-wrap: break-word;
+  width: 117px;
+  height: 38px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
 }
 
 .OsMelhoresHoteisEDestinosParaSuaViagem {
-    left: 345px;
-    top: 251px;
-    position: absolute;
-    text-align: center;
+  left: 345px;
+  top: 251px;
+  position: absolute;
+  text-align: center;
 }
 
 .Header {
-    width: 1307px;
-    height: 26px;
-    left: 59px;
-    top: 17px;
-    position: absolute;
+  width: 1307px;
+  height: 26px;
+  left: 59px;
+  top: 17px;
+  position: absolute;
 }
 
 .Menu {
-    width: 103px;
-    height: 26px;
-    left: 1204px;
-    top: 0px;
-    position: absolute;
+  width: 103px;
+  height: 26px;
+  left: 1204px;
+  top: 0px;
+  position: absolute;
 }
 
 .Item {
-    width: 103px;
-    height: 26px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
+  width: 103px;
+  height: 26px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
 }
 
 .IniciarSessao {
-    left: 19px;
-    top: 0px;
-    position: absolute;
-    text-align: right;
-    color: #698096;
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 500;
-    line-height: 26px;
-    word-wrap: break-word;
+  left: 19px;
+  top: 0px;
+  position: absolute;
+  text-align: right;
+  color: #698096;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 26px;
+  word-wrap: break-word;
 }
 
 .Icon {
-    width: 12px;
-    height: 12px;
-    left: 0px;
-    top: 7px;
-    position: absolute;
-    border: 1px #698096 solid;
+  width: 12px;
+  height: 12px;
+  left: 0px;
+  top: 7px;
+  position: absolute;
+  border: 1px #698096 solid;
 }
 
 .Logo {
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    text-align: right;
-    color: #00264D;
-    font-size: 20px;
-    font-family: Poppins;
-    font-weight: 700;
-    line-height: 26px;
-    word-wrap: break-word;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  text-align: right;
+  color: #00264D;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 26px;
+  word-wrap: break-word;
 }
 .os {
-    color: #00264D;
-    font-size: 50px;
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 20px;
-    word-wrap: break-word;
+  color: #00264D;
+  font-size: 50px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 20px;
+  word-wrap: break-word;
 }
 
 .Hoteis {
-    color: #0080FF;
-    font-size: 50px;
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 20px;
-    word-wrap: break-word;
+  color: #0080FF;
+  font-size: 50px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 20px;
+  word-wrap: break-word;
 }
 
 .e {
-    color: black;
-    font-size: 50px;
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 20px;
-    word-wrap: break-word;
+  color: black;
+  font-size: 50px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 20px;
+  word-wrap: break-word;
 }
 
 .Destinos {
-    color: #0080FF;
-    font-size: 50px;
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 20px;
-    word-wrap: break-word;
+  color: #0080FF;
+  font-size: 50px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 20px;
+  word-wrap: break-word;
 }
 
 .para {
-    color: black;
-    font-size: 50px;
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 20px;
-    word-wrap: break-word;
+  color: black;
+  font-size: 50px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 20px;
+  word-wrap: break-word;
 }
 
 .sua {
-    color: black;
-    font-size: 50px;
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 20px;
-    word-wrap: break-word;
+  color: black;
+  font-size: 50px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 20px;
+  word-wrap: break-word;
 }
 
 .viagem {
-    color: black;
-    font-size: 50px;
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 20px;
-    word-wrap: break-word;
+  color: black;
+  font-size: 50px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 20px;
+  word-wrap: break-word;
 }
 .umdois2022{
-        width: 66.77px;
-    left: 12.14px;
-    top: 22px;
-    position: absolute;
-    text-align: right;
-    color: #00264D;
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 600;
-    line-height: 26px;
-    word-wrap: break-word;
+      width: 66.77px;
+  left: 12.14px;
+  top: 22px;
+  position: absolute;
+  text-align: right;
+  color: #00264D;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+.p{
+  width: 313px;
+  height: 63.62px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; 
+  text-align: right;
+  color: #00264D;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word; 
+}
+.searchResultsContainer{
+  width: 150px;
+  height: 63.62px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; 
+  text-align: right;
+  color: #00264D;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word; 
+}
+.suggestions{
+  width: 109px;
+  height: 43px;
+  left: 37px;
+  top: 10px;
+  position: absolute;
 }
