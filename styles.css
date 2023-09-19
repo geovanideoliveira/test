@@ -8,6 +8,16 @@ head{
   height: 820px;
   position: relative;
   background: #E3EBF3;
+  
+}
+.Rectangle{
+  width: 1440px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.09);
 }
 .Home {
   width: 1440px;
@@ -24,13 +34,15 @@ head{
   position: absolute;
 }
 
-.Rectangle1 {
-  width: 1440px;
+.Rectangle2 {
+  width: 1292px;
   height: 66px;
   left: 0px;
   top: 0px;
   position: absolute;
   background: white;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.09);
+  border-radius: 11px;
 }
 
 .TodosOsDireitosReservados {
@@ -53,9 +65,9 @@ head{
   position: absolute;
 }
 
-.Rectangle {
+.Rectangle7{
   width: 1307px;
-  height: 66px;
+  height: 80px;
   left: 0px;
   top: 0px;
   position: absolute;
@@ -140,6 +152,23 @@ head{
   line-height: 26px;
   word-wrap: break-word;
 }
+input[type="text"] {
+  width: 61px;
+  left: 0px;
+  top: 2px;
+  position: absolute;
+  text-align: right;
+  color: #00264D;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 26px;
+  word-wrap: break-word;
+  border: none; /* Remove as bordas */
+  background: transparent; /* Remove o fundo padrão */
+  outline: none; /* Remove a borda de foco */
+ 
+}
 input[type="date"] {
   width: 80px;
   left: 12.14px;
@@ -219,18 +248,105 @@ input[type="date"] {
   top: 9px;
   position: absolute;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-.Adultos1Quarto {
-  width: 114.31px;
-  left: 13.15px;
-  top: 22px;
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button {
+  width: 115.66px;
+  height: 38px;
+  left: 0px;
+  top: 0px;
   position: absolute;
-  color: #00264D;
+  text-align: center;
+  color: white;
   font-size: 12px;
   font-family: Poppins;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 26px;
   word-wrap: break-word;
+}
+
+span {
+  font-size: 18px;
+}
+
+.quantidade {
+  display: flex;
+  align-items: center;
+  margin: 1px;
+
+}
+
+
+span {
+  font-size: 18px;
+}
+
+.Adultos1Quarto {
+  width: 114px;
+    left: 13.15px;
+    top: 22px;
+    position: absolute;
+    color: #00264D;
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 26px;
+    word-wrap: break-word;
+}
+.Icondest{
+  width: 15px;
+  height: 14px;
+  left: 0px;
+  top: 5px;
+  position: absolute;
+  border: 1px #0080FF solid;
+  background-image: url('img/icon-3.svg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+.Icon4{
+  width: 15px;
+  height: 14px;
+  left: 0px;
+  top: 5px;
+  position: absolute;
+  border: 1px #0080FF solid;
+  background-image: url('img/icon-4.svg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+.Icon3{
+  width: 15px;
+  height: 14px;
+  left: 0px;
+  top: 5px;
+  position: absolute;
+  border: 1px #0080FF solid;
+  background-image: url('img/icon-4.svg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+.Icon2{
+  width: 15px;
+  height: 14px;
+  left: 0px;
+  top: 5px;
+  position: absolute;
+  border: 1px #0080FF solid;
+  background-image: url('img/icon-5.svg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
 
 .HSpedes {
@@ -256,18 +372,24 @@ input[type="date"] {
 }
 
 .BotO {
-  width: 116.85px;
+  width: 117px;
   height: 38px;
-  left: 0.15px;
+  left: 0px;
   top: 0px;
   position: absolute;
-  background: #0080FF;
-  box-shadow: 0px 2px 9px 1px rgba(0, 128, 255, 0.29);
-  border-radius: 50px;
+  text-align: center;
+  color: rgb(53, 20, 146);
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
+  background-color: #0080FF;
+  border-radius: 7%;
 }
 
 .Pesquisar {
-  width: 117px;
+  width: 115.66px;
   height: 38px;
   left: 0px;
   top: 0px;
@@ -461,3 +583,4 @@ input[type="date"] {
   top: 10px;
   position: absolute;
 }
+
